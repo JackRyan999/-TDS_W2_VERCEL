@@ -31,7 +31,7 @@ class handler(BaseHTTPRequestHandler):
         # Send the response header
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*')  # Enable CORS
+        self.send_header('Access-Control-Allow-Origin', '*')  # Enable CORS for any origin
         self.end_headers()
 
         # Send the JSON response
